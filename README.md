@@ -1,5 +1,4 @@
-# ibiodados
-Scripts para automatizar a inserção de dados biológicos num banco de dados MySQL.
+
 # ibiodados
 
 Este repositório armazena alguns scripts internos para inserção automática de dados biológicos no banco de dados MySQL, esses scripts seguem certos padrões relacionados à localização da coleta de dados.
