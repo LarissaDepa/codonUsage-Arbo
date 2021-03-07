@@ -1,7 +1,6 @@
 
 # ibiodados
-
-Este repositório armazena alguns scripts internos para inserção automática de dados biológicos no banco de dados MySQL, esses scripts seguem certos padrões relacionados à localização da coleta de dados.
+Este repositório armazena alguns scripts internos relacionado ao estudo da avaliação do uso de códons em arbovirus.
 
 ### Pacotes:
 - [pymysql](https://pypi.org/project/PyMySQL/)
@@ -12,6 +11,13 @@ Este repositório armazena alguns scripts internos para inserção automática d
 - [os](https://docs.python.org/pt-br/3/library/os.html?highlight=#module-os)
 - [csv](https://docs.python.org/pt-br/3/library/csv.html?highlight=csv#module-csv)
 - [collections](https://docs.python.org/pt-br/3/library/collections.html?highlight=collections#module-collections)
+- [pathlib](https://docs.python.org/pt-br/3/library/pathlib.html)
+
+### pasta
+
+Esta pasta armazena alguns scripts internos para inserção automática de dados biológicos no banco de dados MySQL, esses scripts seguem certos padrões relacionados à localização da coleta de dados.
+
+
 
 ### Comandos
 
@@ -26,6 +32,7 @@ Este repositório armazena alguns scripts internos para inserção automática d
 | **códon RNA\DNA**| `i_codon.py [OPTIONS] FILE`| Insere dados sobre códons de DNA e RNA de um arquivo no formato csv.
 | **frequência de códons do hospedeiro** | `i_freqhost.py [OPTIONS] FILE`|Insere dados sobre frequência de códons do hospedeiro de um arquivo no formato csv.
 | **frequência de genes tRNA** | `i_freqtrna.py [OPTIONS] FILE`| Insere dados sobre frequência de genes de tRNA de um arquivo no formato csv.
+| **frequência de códons dos vírus** | `i_freqvirus.py [OPTIONS] FILE`| Insere dados sobre frequência de códons dos vírus gerados no codonW.
 
 
 #### Exemplo de uso:
@@ -42,4 +49,26 @@ Este repositório armazena alguns scripts internos para inserção automática d
 |     3     |     AAC   |     AAC  |    Asparagina  |     Asn     |
 |     ...   |     ...   |     ...  |     ...        |     ...     |
 +-----------+-----------+----------+----------------+-------------+
+```
+
+### Scripts edição
+
+|scripts                                   
+| :---------------------------------------------- |
+| `trimCrhis.pl`
+| `trimHallz.py`
+| `trimcds.py`
+
+
+#### Exemplo de uso:
+
+```
+Input:
+---aaattcc---cccc--
+aactgtgactgcatgcatgactgactg
+-----------------------------------
+Output:
+aaattcc---cccc
+tgtgactgcatgcatgactgac
+
 ```
