@@ -1,0 +1,2 @@
+echo "atgatggtagtacatcatcat" | perl -lne '$cs{$1}++ while /(...)/g;
+END { foreach $c (sort keys %cs) { print uc($c).": $cs{$c}"  } }'
