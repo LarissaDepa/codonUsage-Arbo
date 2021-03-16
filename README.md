@@ -33,7 +33,7 @@ Esta pasta armazena alguns scripts internos para inserção automática de dados
 | **frequência de códons do hospedeiro** | `i_freqhost.py [OPTIONS] FILE`|Insere dados sobre frequência de códons do hospedeiro de um arquivo no formato csv.
 | **frequência de genes tRNA** | `i_freqtrna.py [OPTIONS] FILE`| Insere dados sobre frequência de genes de tRNA de um arquivo no formato csv.
 | **frequência de códons dos vírus** | `i_freqvirus.py [OPTIONS] FILE`| Insere dados sobre frequência de códons dos vírus gerados no codonW.
-
+| **frequência de códons do hospedeiro** | `i_freqhostnovo.py [OPTIONS] FILE`|Insere dados sobre frequência de códons do hospedeiro de um arquivo no formato csv e calcula a frequência relativa
 
 #### Exemplo de uso:
 
@@ -70,5 +70,21 @@ aactgtgactgcatgcatgactgactg
 Output:
 aaattcc---cccc
 tgtgactgcatgcatgactgac
+
+```
+### Scripts cálculos
+|scripts                                   
+| :---------------------------------------------- |
+| `similaridade.py`
+
+1.0	SIMILARIDADE entre duas espécies a e b  = somatório da freqrelativahumano (especieB) * somatório da freqrelativavirusx (espécie A) / raiz do somatório da freqcodonhumano ao quadrado x somatório da freqcodonrelativavirus ao quadrado
+```
+Output:
+Genoma:  gb:MT636909   RefSeq:  lcl|NC_004162.2_cds_NP_690589.2_2
+Similaridade entre  gb:MT636909  e humano é :  0.9131291564221438
+Genoma:  gb:MT636910   RefSeq:  lcl|NC_004162.2_cds_NP_690589.2_2
+Similaridade entre  gb:MT636910  e humano é :  0.9143951531026236
+Genoma:  gb:MT636911   RefSeq:  lcl|NC_004162.2_cds_NP_690589.2_2
+Similaridade entre  gb:MT636911  e humano é :  0.9139864625759921
 
 ```
