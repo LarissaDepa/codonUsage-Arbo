@@ -36,7 +36,8 @@ def inserir_freqzikv(file):
 
                 totalav = columns[0]
                 genomaid = columns[3]
-                idg = re.sub("\|Orga", "", genomaid)
+                #idg = re.sub("\|Orga", "", genomaid)
+                idg = re.sub("\|.*", "", genomaid)
                 refseq = "lcl|NC_012532.1_cds_YP_002790881.1_1"
                 for item_tupla in lista_tupla:
                     freqabsoluta = item_tupla[1]
