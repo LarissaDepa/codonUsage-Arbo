@@ -36,7 +36,8 @@ def inserir_freqdenv3(file):
 
                 totalav = columns[0]
                 genomaid = columns[3]
-                idg = re.sub("\|Orga", "", genomaid)
+                #idg = re.sub("\|Orga", "", genomaid)
+                idg = re.sub("\|.*", "", genomaid)
                 refseq = "lcl|NC_001475.2_cds_YP_001621843.1_1 "
                 for item_tupla in lista_tupla:
                     freqabsoluta = item_tupla[1]
