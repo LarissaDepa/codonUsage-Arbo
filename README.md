@@ -152,3 +152,9 @@ refseq ['lcl|NC_001474.2_cds_NP_056776.2_1']
 
 
 ### Colaboradores
+
+[ <img src="https://avatars.githubusercontent.com/u/28652519?v=4" width="100px; "/><br><sub><b>Crhisllane Vasconcelos</b></sub> ](https://github.com/crhisllane) 
+
+[ <img src="https://avatars.githubusercontent.com/u/41396273?v=4" width="100px; "/><br><sub><b>Larisse Depa</b></sub> ](https://github.com/LarisseDepa)
+
+[ <img src="https://avatars.githubusercontent.com/u/41396490?v=4" width="100px; "/><br><sub><b>Larissa Depa</b></sub> ](https://github.com/LarissaDepa) 
