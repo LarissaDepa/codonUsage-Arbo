@@ -63,6 +63,8 @@ output:
 
 
 
+
+
 ### Edição
 
 Este diretório armazena alguns scripts que foram utilizados para edição de sequências de genomas completos dos vírus alinhadas com as cds referência do vírus.
@@ -89,6 +91,9 @@ tgtgactgcatgcatgactgac
 
 
 
+
+
+
 ### Validação
 Este diretório armazena scripts que foram utilizados para validação da contagem da frequência de códons e ordenação geradas pelo codonW.
 |scripts                                   
@@ -97,7 +102,14 @@ Este diretório armazena scripts que foram utilizados para validação da contag
 | `valid_ordfreq.py `
 
 
+
+
+
+
 ### Cálculos
+
+Este diretório armazena scripts relacionados aos cálculos do estudo.
+
 |scripts                                   
 | :---------------------------------------------- |
 | `similaridade.py`
