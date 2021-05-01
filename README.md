@@ -65,7 +65,7 @@ output:
 
 ### Edição
 
-Este diretório armazena alguns scripts que foram utilizados para edição de sequências de genomas completos dos vírus alinhadas com a cds do vírus.
+Este diretório armazena alguns scripts que foram utilizados para edição de sequências de genomas completos dos vírus alinhadas com as cds referência do vírus.
 
 |scripts                                   
 | :---------------------------------------------- |
@@ -105,11 +105,4 @@ Similaridade entre  gb:MT636911  e humano é :  0.9139864625759921
 
 
 
-
-
-
-
-
 ### Colaboradores
-
-[ <img src="https://avatars.githubusercontent.com/u/28652519?v=4" width="90px; "/><br><sub><b>Crhisllane Vasconcelos</b></sub> ](https://github.com/crhisllane)| [ <img src="https://avatars.githubusercontent.com/u/41396273?v=4" width="90px; "/><br><sub><b>Larisse Depa</b></sub> ](https://github.com/LarisseDepa)|[ <img src="https://avatars.githubusercontent.com/u/41396490?v=4" width="90px; "/><br><sub><b>Larisse Depa</b></sub> ](https://github.com/LarisseDepa)
