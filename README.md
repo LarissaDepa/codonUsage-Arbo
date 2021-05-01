@@ -17,7 +17,7 @@ https://img.shields.io/badge/ubuntu-20.4-orange)
 - [collections](https://docs.python.org/pt-br/3/library/collections.html?highlight=collections#module-collections)
 - [pathlib](https://docs.python.org/pt-br/3/library/pathlib.html)
 - [statistics](https://docs.python.org/3/library/statistics.html)
-- [match](https://docs.python.org/3/library/math.html)
+- [math](https://docs.python.org/3/library/math.html)
 
 
 
