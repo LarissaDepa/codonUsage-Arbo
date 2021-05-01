@@ -127,7 +127,7 @@ Genoma:  gb:MT636911   RefSeq:  lcl|NC_004162.2_cds_NP_690589.2_2
 Similaridade entre  gb:MT636911  e humano é :  0.9139864625759921
 
 ```
-MÉDIA = média de cada códon para cada vírus(refseq).
+MÉDIA = média da frequência absoluta de cada códon para cada vírus(refseq).
 
 ```
 Output:
