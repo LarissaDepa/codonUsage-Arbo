@@ -7,7 +7,7 @@ import pymysql as MySQLdb
 def conexao():
     try:
         conn = MySQLdb.connect(
-            host="localhost", user="root", passwd="lares", db="db_codonusage"
+            host="localhost", user="root", passwd="", db="db_codonusage"
         )
         print("conectado")
         return conn
