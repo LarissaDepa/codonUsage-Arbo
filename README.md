@@ -1,7 +1,7 @@
 
 # codonUsage-Arbo
 
-Este repositório contém arquivos relacionados ao estudo da avaliação do uso de códons em infecções virais utilizando como modelos os arbovírus: DENV, ZIKV, CHIKV.
+Este repositório contém arquivos relacionados ao estudo da avaliação do uso de códons em infecções virais que utiliza como modelos os arbovírus: DENV, ZIKV, CHIKV.
 
 ![Python Version](https://img.shields.io/pypi/pyversions/orfipy)       ![Mysql Version](https://img.shields.io/badge/MySQL-8-blue) ![ubuntu Version](
 https://img.shields.io/badge/ubuntu-20.4-orange) 
@@ -89,6 +89,10 @@ tgtgactgcatgcatgactgac
 
 ### Validação
 Este diretório armazena scripts que foram utilizados para validação da contagem da frequência de códons e ordenação geradas pelo codonW.
+|scripts                                   
+| :---------------------------------------------- |
+| `count.txt`
+| `valid_ordfreq.py `
 
 
 ### Cálculos
