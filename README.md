@@ -6,7 +6,7 @@ Este repositório contém arquivos relacionados ao estudo da avaliação do uso 
 ![Python Version](https://img.shields.io/pypi/pyversions/orfipy)       ![Mysql Version](https://img.shields.io/badge/MySQL-8-blue) ![ubuntu Version](
 https://img.shields.io/badge/ubuntu-20.4-orange) 
 
-### Pacotes:
+### bibliotecas:
 - [pymysql](https://pypi.org/project/PyMySQL/)
 - [SeqIO](https://biopython.org/docs/1.75/api/Bio.SeqIO.html)
 - [click](https://click.palletsprojects.com/en/7.x/)
