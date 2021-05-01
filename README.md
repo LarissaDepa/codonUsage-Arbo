@@ -95,8 +95,10 @@ Este diretório armazena scripts que foram utilizados para validação da contag
 |scripts                                   
 | :---------------------------------------------- |
 | `similaridade.py`
+| `media.py`
 
-1.0	SIMILARIDADE entre duas espécies a e b  = somatório da freqrelativahumano (especieB) * somatório da freqrelativavirusx (espécie A) / raiz do somatório da freqcodonhumano ao quadrado x somatório da freqcodonrelativavirus ao quadrado
+
+SIMILARIDADE entre duas espécies a e b  = somatório da freqrelativahumano (especieB) * somatório da freqrelativavirusx (espécie A) / raiz do somatório da freqcodonhumano ao quadrado x somatório da freqcodonrelativavirus ao quadrado
 ```
 Output:
 Genoma:  gb:MT636909   RefSeq:  lcl|NC_004162.2_cds_NP_690589.2_2
@@ -107,6 +109,27 @@ Genoma:  gb:MT636911   RefSeq:  lcl|NC_004162.2_cds_NP_690589.2_2
 Similaridade entre  gb:MT636911  e humano é :  0.9139864625759921
 
 ```
+MÉDIA = média de cada códon para cada vírus(refseq).
+
+```
+Output:
+A média 139.8363448631905, do códon AAA da refseq lcl|NC_001474.2_cds_NP_056776.2_1
+refseq ['lcl|NC_001475.2_cds_YP_001621843.1_1']
+ A média 127.64048059149722, do códon AAA da refseq lcl|NC_001475.2_cds_YP_001621843.1_1
+refseq ['lcl|NC_001477.1_cds_NP_059433.1_1']
+ A média 137.1747572815534, do códon AAA da refseq lcl|NC_001477.1_cds_NP_059433.1_1
+refseq ['lcl|NC_002640.1_cds_NP_073286.1_1']
+ A média 127.35272727272728, do códon AAA da refseq lcl|NC_002640.1_cds_NP_073286.1_1
+refseq ['lcl|NC_004162.2_cds_NP_690588.1_1']
+ A média 69.66666666666667, do códon AAA da refseq lcl|NC_004162.2_cds_NP_690588.1_1
+refseq ['lcl|NC_004162.2_cds_NP_690589.2_2']
+ A média 34.666666666666664, do códon AAA da refseq lcl|NC_004162.2_cds_NP_690589.2_2
+refseq ['lcl|NC_012532.1_cds_YP_002790881.1_1']
+ A média 78.63503649635037, do códon AAA da refseq lcl|NC_012532.1_cds_YP_002790881.1_1
+refseq ['lcl|NC_001474.2_cds_NP_056776.2_1']
+
+```
+
 
 
 
