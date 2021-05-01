@@ -19,7 +19,7 @@ https://img.shields.io/badge/ubuntu-20.4-orange)
 
 ###  inserir_banco
 
-Este diretório armazena alguns scripts para inserção de dados biológicos num banco de dados MySQL.
+Este diretório armazena alguns scripts que foram utilizados para inserção de dados biológicos num banco de dados MySQL.
 
 
 
@@ -44,15 +44,8 @@ Este diretório armazena alguns scripts para inserção de dados biológicos num
 
 Input:
 
- ` caminho-arquivo.py/python3 arquivo.py  caminho-arquivooupasta/file.csv`
+ `$ caminho-arquivo.py/   python3 arquivo.py   caminho-arquivo-ou-pasta/file.csv`
 
-```MySQL
-+-----------+-----------+----------+----------------+-------------+
-| PK_codons |  codonRNA | codonDNA | nomeAminoacido |  abrev_aa   |
-+-----------+-----------+------+---+----------------+-------------+
-|           |           |          |                |             | 
-+-----------+-----------+----------+----------------+-------------+
-```
 
 output:
 
@@ -71,6 +64,8 @@ output:
 
 
 ### Edição
+
+Este diretório armazena alguns scripts que foram utilizados para edição de sequências de genomas completos dos vírus alinhadas com a cds do vírus.
 
 |scripts                                   
 | :---------------------------------------------- |
