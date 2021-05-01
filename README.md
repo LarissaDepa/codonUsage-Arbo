@@ -44,7 +44,7 @@ Este diretório armazena alguns scripts que foram utilizados para inserção de 
 
 Input:
 
- `$ caminho-arquivo.py/   python3 arquivo.py   caminho-arquivo-ou-pasta/file.csv`
+ `$ caminho-arquivo.py/   python3 arquivo.py   caminho-arquivo-ou-pasta/file`
 
 
 output:
