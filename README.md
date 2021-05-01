@@ -86,6 +86,11 @@ aaattcc---cccc
 tgtgactgcatgcatgactgac
 
 ```
+
+### Validação
+Este diretório armazena scripts que foram utilizados para validação da contagem da frequência de códons e ordenação geradas pelo codonW.
+
+
 ### Cálculos
 |scripts                                   
 | :---------------------------------------------- |
