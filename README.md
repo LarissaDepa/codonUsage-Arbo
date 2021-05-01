@@ -16,14 +16,12 @@ https://img.shields.io/badge/ubuntu-20.4-orange)
 - [csv](https://docs.python.org/pt-br/3/library/csv.html?highlight=csv#module-csv)
 - [collections](https://docs.python.org/pt-br/3/library/collections.html?highlight=collections#module-collections)
 - [pathlib](https://docs.python.org/pt-br/3/library/pathlib.html)
+- [statistics](https://docs.python.org/3/library/statistics.html)
+
 
 ###  inserir_banco
 
 Este diretório armazena alguns scripts que foram utilizados para inserção de dados biológicos num banco de dados MySQL.
-
-
-
-### Comandos
 
 
 
@@ -86,6 +84,8 @@ aaattcc---cccc
 tgtgactgcatgcatgactgac
 
 ```
+
+
 
 ### Validação
 Este diretório armazena scripts que foram utilizados para validação da contagem da frequência de códons e ordenação geradas pelo codonW.
