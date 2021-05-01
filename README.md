@@ -1,7 +1,7 @@
 
 # codonUsage-Arbo
 
-Este repositório contém arquivos relacionados ao estudo da avaliação do uso de códons em infecções virais que utiliza como modelos os arbovírus: DENV, ZIKV, CHIKV.
+Este repositório contém arquivos gerados com o estudo da avaliação do uso de códons em infecções virais que utiliza como modelos os arbovírus: DENV, ZIKV, CHIKV.
 
 ![Python Version](https://img.shields.io/pypi/pyversions/orfipy)       ![Mysql Version](https://img.shields.io/badge/MySQL-8-blue) ![ubuntu Version](
 https://img.shields.io/badge/ubuntu-20.4-orange) 
@@ -151,7 +151,7 @@ refseq ['lcl|NC_001474.2_cds_NP_056776.2_1']
 
 
 
-### Colaboradores
+### Contribuidores
 
 [ <img src="https://avatars.githubusercontent.com/u/28652519?v=4" width="100px; "/><br><sub><b>Crhisllane Vasconcelos</b></sub> ](https://github.com/crhisllane) 
 
