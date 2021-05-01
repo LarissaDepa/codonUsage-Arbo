@@ -1,6 +1,10 @@
 
-# ibiodados
-Este repositório armazena alguns scripts internos relacionado ao estudo da avaliação do uso de códons em arbovirus.
+# codonUsage-Arbo
+
+Este repositório contém arquivos relacionados ao estudo da avaliação do uso de códons em infecções virais utilizando como modelos os arbovírus: DENV, ZIKV, CHIKV.
+
+![Python Version](https://img.shields.io/pypi/pyversions/orfipy)       ![Mysql Version](https://img.shields.io/badge/MySQL-8-blue) ![ubuntu Version](
+https://img.shields.io/badge/ubuntu-20.4-orange) 
 
 ### Pacotes:
 - [pymysql](https://pypi.org/project/PyMySQL/)
@@ -13,9 +17,9 @@ Este repositório armazena alguns scripts internos relacionado ao estudo da aval
 - [collections](https://docs.python.org/pt-br/3/library/collections.html?highlight=collections#module-collections)
 - [pathlib](https://docs.python.org/pt-br/3/library/pathlib.html)
 
-### pasta
+###  inserir_banco
 
-Esta pasta armazena alguns scripts internos para inserção automática de dados biológicos no banco de dados MySQL, esses scripts seguem certos padrões relacionados à localização da coleta de dados.
+Este diretório armazena alguns scripts para inserção de dados biológicos num banco de dados MySQL.
 
 
 
@@ -23,7 +27,7 @@ Esta pasta armazena alguns scripts internos para inserção automática de dados
 
 
 
-|Comando                                      |Uso                              |Descrição
+|Dado                                      |Uso                              |Descrição
 | :---------------------------------------------- | :-------------------------------------- | :----
 | **help**        | `command --help`| Ajuda
 | **genoma**      | `i_genoma.py [OPTIONS] FILE`  |Insere genomas completos do viprbrc no formato FASTA. 
@@ -34,11 +38,23 @@ Esta pasta armazena alguns scripts internos para inserção automática de dados
 | **frequência de genes tRNA** | `i_freqtrna.py [OPTIONS] FILE`| Insere dados sobre frequência de genes de tRNA de um arquivo no formato csv.
 | **frequência de códons dos vírus** | `i_freqvirus.py [OPTIONS] FILE`| Insere dados sobre frequência de códons dos vírus gerados no codonW.
 | **frequência de códons do hospedeiro** | `i_freqhostnovo.py [OPTIONS] FILE`|Insere dados sobre frequência de códons do hospedeiro de um arquivo no formato csv e calcula a frequência relativa
+| **similaridade** | `i_similaridade.py`| Insere dados sobre cálculos de similaridade.
 
 #### Exemplo de uso:
 
- `python3 i_codon.py file.csv`
+Input:
 
+ ` caminho-arquivo.py/python3 arquivo.py  caminho-arquivooupasta/file.csv`
+
+```MySQL
++-----------+-----------+----------+----------------+-------------+
+| PK_codons |  codonRNA | codonDNA | nomeAminoacido |  abrev_aa   |
++-----------+-----------+------+---+----------------+-------------+
+|           |           |          |                |             | 
++-----------+-----------+----------+----------------+-------------+
+```
+
+output:
 
 ```MySQL
 +-----------+-----------+----------+----------------+-------------+
@@ -51,7 +67,10 @@ Esta pasta armazena alguns scripts internos para inserção automática de dados
 +-----------+-----------+----------+----------------+-------------+
 ```
 
-### Scripts edição
+
+
+
+### Edição
 
 |scripts                                   
 | :---------------------------------------------- |
@@ -72,7 +91,7 @@ aaattcc---cccc
 tgtgactgcatgcatgactgac
 
 ```
-### Scripts cálculos
+### Cálculos
 |scripts                                   
 | :---------------------------------------------- |
 | `similaridade.py`
