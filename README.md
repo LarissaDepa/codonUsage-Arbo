@@ -102,3 +102,14 @@ Genoma:  gb:MT636911   RefSeq:  lcl|NC_004162.2_cds_NP_690589.2_2
 Similaridade entre  gb:MT636911  e humano é :  0.9139864625759921
 
 ```
+
+
+
+
+
+
+
+
+### Colaboradores
+
+[ <img src="https://avatars.githubusercontent.com/u/28652519?v=4" width="90px; "/><br><sub><b>Crhisllane Vasconcelos</b></sub> ](https://github.com/crhisllane)| [ <img src="https://avatars.githubusercontent.com/u/41396273?v=4" width="90px; "/><br><sub><b>Larisse Depa</b></sub> ](https://github.com/LarisseDepa)|[ <img src="https://avatars.githubusercontent.com/u/41396490?v=4" width="90px; "/><br><sub><b>Larisse Depa</b></sub> ](https://github.com/LarisseDepa)
