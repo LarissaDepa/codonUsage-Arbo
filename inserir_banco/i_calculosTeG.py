@@ -25,27 +25,44 @@ con = MySQLdb.connect(host=argumentos.host,
                       user=argumentos.user, passwd=password, db=argumentos.db)
 cursor = con.cursor()
 
-log = open('up_mysql_trna.log', 'w')
+log = open('up_mysql_teG.log', 'w')
 
 
 for codon in codonLines:
     codon = codon.rstrip('\n')
     codonelement = codon.split()
-    anticodon = codonelement[1]
-    freqGene = codonelement[2]
-
-    anticodon = Seq(anticodon)
-    codonDNA = anticodon.reverse_complement()
-    codonRNA = re.sub("T", "U", str(codonDNA))
-    # frequencia1 = int(freqGene)/429
-    print(anticodon, " ", codonDNA, " ", codonRNA,
-          " ", freqGene)
-
-    log.write(str(anticodon))
+    g_asterisco = codonelement[3]
+    g_asterisco = re.sub(",", ".", g_asterisco)
+    codon = codonelement[0]
+    print(codonelement[0])
 
     try:
-        sql = 'INSERT INTO tblFrequenciaGenesTrna (FK_codonRNA, FK_codonDNA, trnaHost, countAnticodon) VALUES (%s, %s, %s, %s)'
-        sql_data = (codonRNA, codonDNA, anticodon, freqGene)
+        g_rich_poor = codonelement[4]
+    except IndexError:
+        g_rich_poor = "NULL"
+
+    try:
+        t_valor = codonelement[5]
+        t_valor = re.sub(",", ".", t_valor)
+    except IndexError:
+        t_valor = 0
+
+    try:
+        fracao = codonelement[6]
+        fracao = re.sub(",", ".", fracao)
+    except IndexError:
+        fracao = 0
+    try:
+        G = codonelement[7]
+    except IndexError:
+        G = 0
+
+    print(codon, "\t", g_asterisco, "\t", g_rich_poor,
+          "\t", t_valor, "\t", fracao, "\t", G)
+
+    try:
+        sql = 'UPDATE tblFrequenciaGenesTrna SET g_asterisco = %s, g_rich_poor = %s,  t_valor = %s, fracao = %s, G = %s WHERE FK_codonRNA = %s'
+        sql_data = (g_asterisco, g_rich_poor, t_valor, fracao, G, codon)
         cursor.execute(sql, sql_data)
         con.commit()
 
@@ -60,9 +77,3 @@ for codon in codonLines:
         log.write('\t ' + dontWork)
 
     log.write("\n")
-
-
-cursor.close()
-con.close()
-log.close()
-codonFile.close()
